@@ -14,16 +14,45 @@
 // WHILE loop
 // @while $var something int
 
-$num: 6;
+// $num: 6;
+//
+// @while $num < 7
+// {
+//   $width: percentage( 1 / $num );
+//
+//   .column-#{$num}
+//   {
+//     width: $width;
+//   }
+//
+//   $num: $num + 1;
+// }
 
-@while $num < 7
+// EACH loop
+// @each key, value in array {}
+
+$white: #fff;
+$black: #000;
+$red: #F00;
+$primary: #4F4F4F;
+$secondary: #333;
+
+$colours: (
+  'white': $white,
+  'black': $black,
+  'red': $red,
+  'primary': $primary,
+  'secondary': $secondary
+);
+
+@each $colour, $hex in $colours
 {
-  $width: percentage( 1 / $num );
-
-  .column-#{$num}
+  .text-#{$colour}
   {
-    width: $width;
+    color: $hex;
   }
-
-  $num: $num + 1;
+  .background-#{$colour}
+  {
+    background-color: $hex;
+  }
 }

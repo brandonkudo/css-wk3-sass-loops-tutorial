@@ -1,4 +1,31 @@
-.column-6 {
-  width: 16.66667%; }
+.text-white {
+  color: #fff; }
+
+.background-white {
+  background-color: #fff; }
+
+.text-black {
+  color: #000; }
+
+.background-black {
+  background-color: #000; }
+
+.text-red {
+  color: #F00; }
+
+.background-red {
+  background-color: #F00; }
+
+.text-primary {
+  color: #4F4F4F; }
+
+.background-primary {
+  background-color: #4F4F4F; }
+
+.text-secondary {
+  color: #333; }
+
+.background-secondary {
+  background-color: #333; }
 
 /*# sourceMappingURL=style.css.map */
